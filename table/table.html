@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <link rel="stylesheet" href="css/table.css">
+</head>
+
+<body>
+    <div class="ttop">
+        <div class="top">&nbsp;首页 / 我的课程 / 课程列表</div>
+        <div class="add">
+            分类：<input type="text" class="classify">&nbsp;&nbsp;
+            标题：<input type="text" class="title">&nbsp;&nbsp;
+            班级：<input type="text" class="grade">&nbsp;&nbsp;
+            状态：<input type="text" class="status">&nbsp;&nbsp;<br/>
+            创建时间：<input type="text" class="settime">&nbsp;&nbsp;
+            创建者：<input type="text" class="creator">&nbsp;&nbsp;
+            分校地区：<input type="text" class="area">&nbsp;&nbsp;
+            <input type="button" class="addBtn" value="录入">&nbsp;&nbsp;
+            <span class="error">请勿留空</span>
+	    </div>   
+    </div>
+    <table>
+        <thead>
+            <th>
+            <input type="checkbox" class="checkbox"  value="全选删除">ID
+            <span class="up">↑↓</span>
+            </th>
+            <th>分类</th>
+            <th>标题</th>
+            <th>班级</th>
+            <th>状态</th>
+            <th>创建时间</th>
+            <th>创建者</th>
+            <th>分校地区</th>
+            <th>删除</th>
+        </thead>
+        <tbody>
+    </table>
+    <div class="bom">
+        <input type="text" class="box">
+        <input type="button" value="删除" class="delete">
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/data.js"></script>
