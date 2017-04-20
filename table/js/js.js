@@ -77,17 +77,21 @@ $(function(){
         initPage(data);
     }
         $(".addBtn").on("click", function () {
-                  id_ = id_ + 1;
-                var classNames = {
-                    classify: '.classify',
-                    title: '.title',
-                    grade: '.grade',
-                    status: '.status',
-                    settime: '.settime',
-                    creator: '.creator',
-                    area: '.area'
-                };
-                reHtml(data,classNames);  
+            if($(".classify").val()=="" || $(".title").val()=="" || $(".grade").val()==""|| $(".status").val()=="" || $(".settimetime").val()=="" || $(".creator").val()=="" || $(".area").val()==""){
+            $(".error").show();
+            }else{
+                 id_ = id_ + 1;
+                    var classNames = {
+                        classify: '.classify',
+                        title: '.title',
+                        grade: '.grade',
+                        status: '.status',
+                        settime: '.settime',
+                        creator: '.creator',
+                        area: '.area'
+                    };
+                reHtml(data,classNames);     
+            }
     })
     
     
@@ -162,7 +166,13 @@ $(function(){
         }
         
     })
-
+  /* 
+    $(".delete").on("click",function(){
+        if($(".select").is(':checked')){
+            $(this).parent("td").parent("tr").remove();
+        }
+    })*/
+    
 	$("tbody tr").eq(0).addClass("bg").siblings("tr").removeClass("bg");
 	
 	
