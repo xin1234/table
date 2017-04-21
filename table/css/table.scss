@@ -5,6 +5,7 @@
     left: 0;
     top: 0;
     background: #fff;
+    z-index: 1;
 }
 
 .top {
@@ -46,9 +47,14 @@ span.error {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 125px;
 }
-
+.bomm{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    z-index: 0;
+}
 thead {
     background: #333333;
     color: #ffffff;
